@@ -2,4 +2,6 @@
 exec > >(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1
 
 sudo yum clean all
-sudo yum install -y amazon-efs-utils python3
+
+export AWS_SECRET_ACCESS_KEY=
+export AWS_ACCESS_KEY_ID=
