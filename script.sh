@@ -5,8 +5,6 @@ export AWS_SECRET_ACCESS_KEY=
 exec > >(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1
 
 cd /home/ec2-user
-yum clean all
-
 aws s3api get-object --bucket confluences3bucket --key bootstrap-lab.tz bootstrap.tz
 tar -xf bootstrap.tz
 
