@@ -48,7 +48,7 @@ resource "aws_instance" "confluence" {
   }
   ebs_block_device {
     device_name = "/dev/sdi"
-    volume_size = 15
+    volume_size = 5
     tags = {
       Name = "confluence-shared"
     }
