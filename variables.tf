@@ -9,12 +9,3 @@ variable "ssh_port" {
   type        = number
   default     = 22
 }
-
-variable "bucket_name" {
-  type    = string
-  default = "confluences3bucket"
-}
-
-variable "acl_value" {
-  default = "private"
-}
