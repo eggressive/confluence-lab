@@ -1,7 +1,21 @@
+#Secrets
+variable "access_key" {
+  description = "AWS Access key"
+  type        = string
+  sensitive   = true
+}
+
+variable "secret_key" {
+  description = "AWS Secret access key"
+  type        = string
+  sensitive   = true
+}
+
 #Variables
 variable "key_name" {
-  type    = string
-  default = "ec2_key"
+  description = "Name of the keypair"
+  type        = string
+  default     = "ec2_key"
 }
 
 variable "ssh_port" {
